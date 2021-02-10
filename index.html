@@ -6,28 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Only ZAZA</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 </head>
 
 <body>
-    <header>
-        <section class="header_start">
-            <div class="logo">
-                <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
-                <div class="header_button">
-                    <button>Deals</button>
-                    <button>Vendors</button>
+    <header class="">
+        <section class="header_start container_re">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                    <div class="logo">
+                        <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
+                        <div class="header_button">
+                            <button>Deals</button>
+                            <button>Vendors</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="accountdetail">
-                <h2>My Account</h2>
-                <div class="cart">
-                    <img src="assets/images/_basket.png" alt="cart icone">
-                    <h2>Cart</h2>
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                    <div class="accountdetail">
+                        <div class="cart">
+                            <div class="carttDropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    cart <img src="./assets/images/_basket.png" alt="">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product_in_cart">
+                                            <div class="cart_box">
+                                                <div class="cart_box_img">
+                                                    <img src="./assets/images/productimg.png" alt="">
+                                                </div>
+                                                <div class="cart_box_detail">
+                                                    <h2 class="product_name">gushers or Title of product</h2>
+                                                    <h2 class="product_vendore_name">Green alien Smoke</h2>
+                                                    <div class="cart_box_de_">
+                                                        <div>
+                                                            <h3>Weight:</h3>
+                                                            <h3>Quantity:</h3>
+                                                            <h3>Price:</h3>
+                                                        </div>
+                                                        <div>
+                                                            <h3>1/8</h3>
+                                                            <h3>1</h3>
+                                                            <h3>$ 60.00</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product_in_cart">
+                                            <div class="cart_box">
+                                                <div class="cart_box_img">
+                                                    <img src="./assets/images/productimg.png" alt="">
+                                                </div>
+                                                <div class="cart_box_detail">
+                                                    <h2 class="product_name">gushers or Title of product</h2>
+                                                    <h2 class="product_vendore_name">Green alien Smoke</h2>
+                                                    <div class="cart_box_de_">
+                                                        <div>
+                                                            <h3>Weight:</h3>
+                                                            <h3>Quantity:</h3>
+                                                            <h3>Price:</h3>
+                                                        </div>
+                                                        <div>
+                                                            <h3>1/8</h3>
+                                                            <h3>1</h3>
+                                                            <h3>$ 60.00</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="cart_btns">
+                                            <button class="cart_button">Cart</button>
+                                            <button class="check_out">Check out</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountDropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                My Account
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                                <a class="dropdown-item" href="#">User Name</a>
+                                <a class="dropdown-item" href="#">Your Wish List</a>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -43,56 +120,117 @@
     </section>
     <section class="deals container_re">
         <div class="deal_of_weak">
-            <div class="deal_slide">
-                <div class="deal_box">
-                    <div class="deal1">
-                        <h3>DEAL OF THE</h3>
-                        <h2>WEEK</h2>
-                    </div>
-                    <div class="you_save1">
-                        <h3>View All Deals</h3>
-                        <div class="you_save_img1">
-                            <img src="./assets/images/Arrow 2.png" alt="">
+            <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="deal_box">
+                                <div class="deal1">
+                                    <h3>DEAL OF THE</h3>
+                                    <h2>WEEK</h2>
+                                </div>
+                                <div class="you_save1">
+                                    <h3>View All Deals</h3>
+                                    <div class="you_save_img1">
+                                        <img src="./assets/images/Arrow 2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="deal_box">
+                                <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                                <div class="deal_box_detail">
+                                    <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                                </div>
+                                <div class="deal_box_price">
+                                    <div>
+                                        <h3>$ 300</h3>
+                                    </div>
+                                    <div class="you_save">
+                                        <h3>save 40%</h3>
+                                        <div class="you_save_img">
+                                            <img src="./assets/images/_basket.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="you_save">
-                            <h3>save 40%</h3>
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="deal_box">
+                                <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                                <div class="deal_box_detail">
+                                    <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                                </div>
+                                <div class="deal_box_price">
+                                    <div>
+                                        <h3>$ 300</h3>
+                                    </div>
+                                    <div class="you_save">
+                                        <h3>save 40%</h3>
+                                        <div class="you_save_img">
+                                            <img src="./assets/images/_basket.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="deal_box">
+                                <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                                <div class="deal_box_detail">
+                                    <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                                </div>
+                                <div class="deal_box_price">
+                                    <div>
+                                        <h3>$ 300</h3>
+                                    </div>
+                                    <div class="you_save">
+                                        <h3>save 40%</h3>
+                                        <div class="you_save_img">
+                                            <img src="./assets/images/_basket.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="deal_box">
+                                <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                                <div class="deal_box_detail">
+                                    <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                                </div>
+                                <div class="deal_box_price">
+                                    <div>
+                                        <h3>$ 300</h3>
+                                    </div>
+                                    <div class="you_save">
+                                        <h3>save 40%</h3>
+                                        <div class="you_save_img">
+                                            <img src="./assets/images/_basket.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
-                        </div>
-                        <div class="you_save">
-                            <h3>save 40%</h3>
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev  w-auto" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next  w-auto" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
@@ -130,157 +268,251 @@
 
     <section class="vendors container_re">
         <h2>Top Vendors</h2>
-        <div class="multiplevendor">
-            <div class="vendor_profile_box">
-                <img src="./assets/images/marijuana-leaf_23-2147501610.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
+        <div class="multiplevendor row">
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/marijuana-leaf_23-2147501610.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="vendor_profile_box">
-                <img src="./assets/images/weed-skull-smoke-illustrations_228886-311.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/weed-skull-smoke-illustrations_228886-311.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="vendor_profile_box">
-                <img src="./assets/images/alien-weed-freedom-text_92863-524.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/alien-weed-freedom-text_92863-524.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="vendor_profile_box">
-                <img src="./assets/images/cannabis-sagamore-mascot-illustration_117488-312-2.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/cannabis-sagamore-mascot-illustration_117488-312-2.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="vendor_profile_box">
-                <img src="./assets/images/smoking-alien-illustration_92863-503.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/smoking-alien-illustration_92863-503.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/lion-king-weed_117488-118.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/alien-rocker-wearing-spiked-jacket_67811-445.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/tiger-weed-illustration-hand-drawn_25333-351.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/cannabis-crown-logo-illustrations_228886-303.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 center">
+                <div class="vendor_profile_box">
+                    <img src="./assets/images/alien-dreadlock-king-weed-smoke-illustrations_228886-266.png" alt="">
+                    <div class="vendor_type">GOLD</div>
+                    <div class="vendors_names">
+                        <h3>Name of shop</h3>
+                        <img src="./assets/images/stars.png" alt="">
+                        <p>Open</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="multiplevendor">
-            <div class="vendor_profile_box">
-                <img src="./assets/images/lion-king-weed_117488-118.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
-                </div>
-            </div>
-
-            <div class="vendor_profile_box">
-                <img src="./assets/images/alien-rocker-wearing-spiked-jacket_67811-445.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
-                </div>
-            </div>
-
-            <div class="vendor_profile_box">
-                <img src="./assets/images/tiger-weed-illustration-hand-drawn_25333-351.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
-                </div>
-            </div>
-
-            <div class="vendor_profile_box">
-                <img src="./assets/images/cannabis-crown-logo-illustrations_228886-303.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
-                </div>
-            </div>
-
-            <div class="vendor_profile_box">
-                <img src="./assets/images/alien-dreadlock-king-weed-smoke-illustrations_228886-266.png" alt="">
-                <div class="vendor_type">GOLD</div>
-                <div class="vendors_names">
-                    <h3>Name of shop</h3>
-                    <img src="./assets/images/stars.png" alt="">
-                    <p>Open</p>
-                </div>
-            </div>
-        </div>
+        <!-- <div class="multiplevendor row">
+        </div> -->
     </section>
     <section class="hotdeals container_re">
         <h2>Hot Deals</h2>
         <div class="hotdeals_slide">
-            <div class="hot_deals_box">
-                <div class="hot_deal_img">
-                    <p>
-                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
-                    </p>
-                </div>
-                <div class="hot_deal_details vendors_names">
-                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
-                    <div class="hot_deal_price">
-                        <h2>$300</h2>
-                        <img src="./assets/images/_basket.png" alt="">
+            <div id="myCarousel2" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="hot_deals_box">
+                                <div class="hot_deal_img">
+                                    <p>
+                                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
+                                    </p>
+                                </div>
+                                <div class="hot_deal_details vendors_names">
+                                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
+                                    <div class="hot_deal_price">
+                                        <h2>$300</h2>
+                                        <img src="./assets/images/_basket.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="hot_deals_box">
-                <div class="hot_deal_img2 hot_deal_img">
-                    <p>
-                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
-                    </p>
-                </div>
-                <div class="hot_deal_details vendors_names">
-                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
-                    <div class="hot_deal_price ">
-                        <h2>$300</h2>
-                        <img src="./assets/images/_basket.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="hot_deals_box">
-                <div class="hot_deal_img">
-                    <p>
-                        1OZ <br> INDOOR PREMIUM <br> $270 <br> FOR <br> 2OZ
-                    </p>
-                </div>
-                <div class="hot_deal_details vendors_names">
-                    <h2>1OZ INDOOR PREMIUM $270 FOR 2OZ</h2>
-                    <div class="hot_deal_price">
-                        <h2>$300</h2>
-                        <img src="./assets/images/_basket.png" alt="">
-                    </div>
-                </div>
+                <a class="carousel-control-prev  w-auto" href="#myCarousel2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next  w-auto" href="#myCarousel2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
@@ -289,25 +521,27 @@
             <img src="./assets/images/bottomimg.png" alt="">
         </div>
     </section>
-    <footer>
-        <div class="footer_detail">
-            <div class="discount">
-                <h2>Exclusive discounts</h2>
-                <p>Subscribe to our news and get a 10% discount coupon!</p>
-            </div>
-            <div>
-                <form class="subscribe_form">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="email" placeholder="Enter your email">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">subscribe</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div class="social_media">
-                <h2>GET SOCIAL</h2>
-                <img src="./assets/images/socialmedia.png" alt="">
+    <footer class="">
+        <div class="container_re">
+            <div class="footer_detail row">
+                <div class="discount col-lg-4 col-md-6">
+                    <h2>Exclusive discounts</h2>
+                    <p>Subscribe to our news and get a 10% discount coupon!</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <form class="subscribe_form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="social_media col-lg-4 col-md-6">
+                    <h2>GET SOCIAL</h2>
+                    <img src="./assets/images/socialmedia.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
@@ -321,6 +555,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </body>
 
 </html>

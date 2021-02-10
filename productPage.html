@@ -6,27 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <section class="header_start">
-            <div class="logo">
-                <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
-                <div class="header_button">
-                    <button>Deals</button>
-                    <button>Vendors</button>
+    <header class="">
+        <section class="header_start container_re">
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                    <div class="logo">
+                        <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
+                        <div class="header_button">
+                            <button>Deals</button>
+                            <button>Vendors</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="accountdetail">
-                <h2>My Account</h2>
-                <div class="cart">
-                    <img src="assets/images/_basket.png" alt="cart icone">
-                    <h2>Cart</h2>
+                <div class="col-sm-6 col-lg-6 col-xl-6">
+                    <div class="accountdetail">
+                        <div class="cart">
+                            <div class="carttDropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    cart <img src="./assets/images/_basket.png" alt="">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product_in_cart">
+                                            <div class="cart_box">
+                                                <div class="cart_box_img">
+                                                    <img src="./assets/images/productimg.png" alt="">
+                                                </div>
+                                                <div class="cart_box_detail">
+                                                    <h2 class="product_name">gushers or Title of product</h2>
+                                                    <h2 class="product_vendore_name">Green alien Smoke</h2>
+                                                    <div class="cart_box_de_">
+                                                        <div>
+                                                            <h3>Weight:</h3>
+                                                            <h3>Quantity:</h3>
+                                                            <h3>Price:</h3>
+                                                        </div>
+                                                        <div>
+                                                            <h3>1/8</h3>
+                                                            <h3>1</h3>
+                                                            <h3>$ 60.00</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="product_in_cart">
+                                            <div class="cart_box">
+                                                <div class="cart_box_img">
+                                                    <img src="./assets/images/productimg.png" alt="">
+                                                </div>
+                                                <div class="cart_box_detail">
+                                                    <h2 class="product_name">gushers or Title of product</h2>
+                                                    <h2 class="product_vendore_name">Green alien Smoke</h2>
+                                                    <div class="cart_box_de_">
+                                                        <div>
+                                                            <h3>Weight:</h3>
+                                                            <h3>Quantity:</h3>
+                                                            <h3>Price:</h3>
+                                                        </div>
+                                                        <div>
+                                                            <h3>1/8</h3>
+                                                            <h3>1</h3>
+                                                            <h3>$ 60.00</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="cart_btns">
+                                            <button class="cart_button">Cart</button>
+                                            <button class="check_out">Check out</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accountDropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                My Account
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                                <a class="dropdown-item" href="#">User Name</a>
+                                <a class="dropdown-item" href="#">Your Wish List</a>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,163 +153,129 @@
             </div>
         </div>
         <div class="product-list-display">
-            <div class="deal_slide">
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="deal_slide">
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="deal_slide">
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
                         </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
-                        </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="deal_box">
-                    <img src="./assets/images/deal.png" alt="">
-                    <div class="deal_box_detail">
-                        <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
-                    </div>
-                    <div class="deal_box_price">
-                        <div>
-                            <h3>$ 300</h3>
-                        </div>
-                        <div class="you_save">
-                            <div class="you_save_img">
-                                <img src="./assets/images/_basket.png" alt="">
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,27 +283,27 @@
             </div>
         </div>
     </section>
-
-
-    <footer>
-        <div class="footer_detail">
-            <div class="discount">
-                <h2>Exclusive discounts</h2>
-                <p>Subscribe to our news and get a 10% discount coupon!</p>
-            </div>
-            <div>
-                <form class="subscribe_form">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="email" placeholder="Enter your email">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">subscribe</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div class="social_media">
-                <h2>GET SOCIAL</h2>
-                <img src="./assets/images/socialmedia.png" alt="">
+    <footer class="">
+        <div class="container_re">
+            <div class="footer_detail row">
+                <div class="discount col-lg-4 col-md-6">
+                    <h2>Exclusive discounts</h2>
+                    <p>Subscribe to our news and get a 10% discount coupon!</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <form class="subscribe_form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="email" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="social_media col-lg-4 col-md-6">
+                    <h2>GET SOCIAL</h2>
+                    <img src="./assets/images/socialmedia.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
@@ -273,6 +317,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/carousel.js"></script>
 </body>
 
 </html>
