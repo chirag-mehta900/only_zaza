@@ -70,17 +70,17 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
     .container_re {
-        max-width: 800px;
+        max-width: 970px;
     }
 }
 
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
     .container_re {
         max-width: 750px;
     }
-}
+} */
 
 @media only screen and (max-width: 700px) {
     .container_re {
@@ -105,7 +105,12 @@
     .header_button {
         justify-content: center;
     }
-
+    .header_button button{
+        width: 100%;
+    }
+.deal_box_price h3{
+    font-size: 20px;
+}
     .carttDropdown .dropdown-menu {
         width: 85%;
     }
@@ -138,18 +143,110 @@
     .store-img {
         margin-top: 14px;
     }
-    .hilight_line h2{
+
+    .hilight_line h2 {
         font-size: 20px;
     }
-    .shop{
-        display: grid;
+
+    .shop {
+        display: block;
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .shop-summ-name h2 {
+        font-size: 15px;
+    }
+
+    .shop-summ-info {
+        justify-content: center;
+    }
+
+    .shop-rating {
+        display: block;
+    }
+
+    .filter-product {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .filter-product h2 {
+        margin-bottom: 5px;
+    }
+
+    .store-list-box {
+        margin: 15px;
+    }
+
+    .product-search-filter {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .product_det {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .review-block {
+        display: block;
+    }
+
+    .review-block-img {
+        justify-content: center;
+    }
+
+    .review-block-detail {
+        margin-left: 0px;
+    }
+
+    .review-block-start {
+        align-items: flex-start;
+    }
+
+    .review-block-start p {
+        font-size: 12px;
+    }
+
+    .review-block-detail h2 {
+        font-size: 15px;
+    }
+
+    .review-block-detail h3 {
+        font-size: 20px;
+    }
+
+    .review {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .rating {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .bar-rating {
+        width: 75%
+    }
+
+    .review_line h2 {
+        width: 20%;
+    }
+    .product-d h3{
+        font-size: 15px;
     }
 }
+
 @media only screen and (max-width: 916px) {
-    .shop-search{
+    .shop-search {
         display: none;
     }
-    .shop_detail{
+
+    .shop_detail {
         margin-right: 20px;
+        margin-left: 20px;
     }
 }
