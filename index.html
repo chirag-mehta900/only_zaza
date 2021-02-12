@@ -115,8 +115,40 @@
             <h2>It’s Time to Plug in to DC’s Premiere Delivery Service</h2>
         </div>
         <div class="search_bar_vender">
-            <h2>Search</h2>
-            <p>Search by Vendor or Product</p>
+            <div class="search-v">
+                <p>SEARCH</p>
+                <select class="search_vender_drop" data-show-subtext="true" data-live-search="true"
+                    aria-placeholder="Search For Vendor">
+                    <option data-subtext="Rep California">
+                        <div class="serch-vend-drop-box">
+                            <div class="vend-renk">Gold</div>
+                            <div class="serch-vend-drop-name">Vendor Name</div>
+                            <div class="serch-vend-drop-img"><img src="./assets/images/icone/review-star.png" alt="">
+                            </div>
+                            <div class="serch-vend-drop-open">Open</div>
+                        </div>
+                    </option>
+                    <option data-subtext="Sen California">Bill Gordon</option>
+                    <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                    <option data-subtext="Rep Alabama">Mario Flores</option>
+                    <option data-subtext="Rep Alaska">Don Young</option>
+                    <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                </select>
+                <div class="serch-vend-drop-box">
+                    <div class="vend-renk">Gold</div>
+                    <div class="serch-vend-drop-name">Vendor Name</div>
+                    <div class="serch-vend-drop-img"><img src="./assets/images/icone/review-star.png" alt=""> </div>
+                    <div class="serch-vend-drop-open">Open</div>
+                </div>
+            </div>
+            <div class="near-v">
+                <p>NEAR</p>
+                <input type="text" name="nearlocation" id="nearlocation" placeholder="Lincoln Memorial, DC">
+                <img class="near-v-downarrow" src="./assets/images/icone/down arrow.png" alt="">
+                <button>
+                    <img src="./assets/images/icone/search.png" alt="">
+                </button>
+            </div>
         </div>
     </section>
     <section class="deals container_re">
@@ -224,11 +256,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev  w-auto" href="#myCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev mobile w-auto" href="#myCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next  w-auto" href="#myCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next mobile w-auto" href="#myCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -255,18 +287,9 @@
                         <img class="d-block w-100" src="assets/images/Mask Group.png" alt="Third slide">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </section>
-
     <section class="vendors container_re">
         <h2 class="headind-top">Top Vendors</h2>
         <div class="multiplevendor row">
@@ -276,7 +299,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -288,7 +314,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -300,7 +329,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -312,7 +344,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -324,7 +359,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -335,7 +373,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -347,7 +388,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -359,7 +403,10 @@
                     <div class="vendor_type">GOLD</div>
                     <div class="vendors_names">
                         <h3>Name of shop</h3>
-                        <img src="./assets/images/stars.png" alt="">
+                        <div class="product-search-filte">
+                            <img src="./assets/images/stars.png" alt="">
+                            <img class="right-arrow-vend" src="./assets/images/icone/vendor right arrow.svg" alt="">
+                        </div>
                         <p>Open</p>
                     </div>
                 </div>
@@ -530,11 +577,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev  w-auto" href="#myCarousel2" role="button" data-slide="prev">
+                <a class="carousel-control-prev mobile w-auto" href="#myCarousel2" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next  w-auto" href="#myCarousel2" role="button" data-slide="next">
+                <a class="carousel-control-next mobile w-auto" href="#myCarousel2" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -655,11 +702,11 @@
                     </div>
                 </div>
 
-                <a class="carousel-control-prev  w-auto" href="#myCarousel3" role="button" data-slide="prev">
+                <a class="carousel-control-prev mobile w-auto" href="#myCarousel3" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next  w-auto" href="#myCarousel3" role="button" data-slide="next">
+                <a class="carousel-control-next mobile w-auto" href="#myCarousel3" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>

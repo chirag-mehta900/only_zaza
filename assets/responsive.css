@@ -105,12 +105,15 @@
     .header_button {
         justify-content: center;
     }
-    .header_button button{
+
+    .header_button button {
         width: 100%;
     }
-.deal_box_price h3{
-    font-size: 20px;
-}
+
+    .deal_box_price h3 {
+        font-size: 20px;
+    }
+
     .carttDropdown .dropdown-menu {
         width: 85%;
     }
@@ -235,8 +238,67 @@
     .review_line h2 {
         width: 20%;
     }
-    .product-d h3{
+
+    .product-d h3 {
         font-size: 15px;
+    }
+
+    .product-name-p h2 {
+        font-size: 20px;
+    }
+
+    .product-price h2 {
+        font-size: 20px;
+    }
+
+    .product-click-details {
+        margin-top: 20px;
+    }
+
+    .buy_wish {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .headline_promo {
+        display: block;
+    }
+
+    input#promo_code {
+        width: 65%;
+    }
+
+    .headind-top {
+        margin-bottom: 15px;
+    }
+
+    .promo-code {
+        margin-bottom: 30px;
+    }
+
+    .search_bar_vender {
+        display: block;
+    }
+
+    .search-v select, .serch-vend-drop-box {
+        width: 300px;
+    }
+
+    .near-v input {
+        width: 300px;
+    }
+
+    .search-v {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .search_bar_vender {
+        max-width: 311px;
+        margin: auto;
+    }
+    .mobile{
+        display: none !important;
     }
 }
 
