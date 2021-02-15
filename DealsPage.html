@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Deals Page</title>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -93,110 +93,90 @@
             </div>
         </section>
     </header>
-    <div class="hilight_line">
-        <div class="container_re">
-            <p>Home / Cart contents</p>
+    <section class="search_bar_2">
+        <div class="intro_search_bar">
+            <h2>We’ve got a plug</h2>
         </div>
-    </div>
-    <section class="cart-page">
-        <div class="container_re">
-            <div class="headline_promo">
-                <div class="headind-top">
-                    <h2>Cart contents</h2>
-                </div>
-                <div class="promo-code">
-                    <input type="text" name="promo" id="promo_code" placeholder="Gift certificate or promo code">
-                    <button class="promo_apply_btn">Apply</button>
-                </div>
-            </div>
-            <div class="cart-box">
-                <div class="cart-code">
-                    <p>CODE: 6006FA3A5504E</p>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="product-click-img">
-                            <img class="img-fluid" src="./assets/images/productimg.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="product-click-details">
-                            <div class="product-name-p">
-                                <h2>gushers or Title of product</h2>
+        <div class="search_bar_vender">
+            <div class="search-v">
+                <p>SEARCH</p>
+                <select class="search_vender_drop" data-show-subtext="true" data-live-search="true"
+                    aria-placeholder="Search For Vendor">
+                    <option data-subtext="Rep California">
+                        <div class="serch-vend-drop-box">
+                            <div class="vend-renk">Gold</div>
+                            <div class="serch-vend-drop-name">Vendor Name</div>
+                            <div class="serch-vend-drop-img"><img src="./assets/images/icone/review-star.png" alt="">
                             </div>
-                            <!-- <div class="product-price">
-                                <h2>$60</h2>
-                            </div> -->
-                            <div class="product-d">
-                                <div class="marg-right">
-                                    <h3>Weights:</h3>
-                                    <h3>Vendor:</h3>
-                                    <h3>Price in points:</h3>
-                                    <h3>Unit Price:</h3>
-                                    <h3>Quantity:</h3>
-                                </div>
-                                <div>
-                                    <div class="cart_weight">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Select Weight
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">1/8</a>
-                                            <a class="dropdown-item" href="#">1/4</a>
-                                            <a class="dropdown-item" href="#">1/2</a>
-                                            <a class="dropdown-item" href="#">OZ</a>
-                                        </div>
-                                    </div>
-                                    <h3>Green alien Smoke</h3>
-                                    <h3>60 points</h3>
-                                    <h3>60 points</h3>
-                                    <input class="quantity_box" type="number" value="1">
-                                </div>
-                            </div>
+                            <div class="serch-vend-drop-open">Open</div>
                         </div>
-                    </div>
-                </div>
+                    </option>
+                    <option data-subtext="Sen California">Bill Gordon</option>
+                    <option data-subtext="Sen Massacusetts">Elizabeth Warren</option>
+                    <option data-subtext="Rep Alabama">Mario Flores</option>
+                    <option data-subtext="Rep Alaska">Don Young</option>
+                    <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option>
+                </select>
             </div>
-            <div class="order-address">
-                <div class="address-box">
-                    <div class="cart-address">
-                        <textarea name="message" id="message" cols="45" rows="3" placeholder="Your Text" value=""></textarea>
-                        <img src="./assets/images/icone/cartaddress.svg" alt="">
-                    </div>
-                    <input type="number" name="zip-code" id="zip-code" placeholder="Zip Code">
-                </div>
-                <div class="payment_method">
-                    <div>
-                        Payment Method
-                    </div>
-                    <input type="radio" id="Delivery" name="Delivery" value="Delivery" checked>
-                    <label for="Delivery">Pay On Delivery</label>
-                </div>
-            </div>
-            <div class="checkout-comp">
-                <button>Continue Shopping</button>
-                <button>Proceed to Checkout</button>
+            <div class="near-v">
+                <p>NEAR</p>
+                <input type="text" name="nearlocation" id="nearlocation" placeholder="Lincoln Memorial, DC">
+                <img class="near-v-downarrow" src="./assets/images/icone/down arrow.png" alt="">
+                <button>
+                    <img src="./assets/images/icone/search.png" alt="">
+                </button>
             </div>
         </div>
+
     </section>
-    <section class="container_re cart-relates">
-        <h2 class="headind-top">Related products</h2>
+    <section class="container_re prod-view-all">
+        <div>
+            <h2>All Product</h2>
+        </div>
+        <hr>
+        <div class="filter-product">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select Weight
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="#">1/8</a>
+                    <a class="dropdown-item" href="#">1/4</a>
+                    <a class="dropdown-item" href="#">1/2</a>
+                    <a class="dropdown-item" href="#">OZ</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Relevance
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Relevance</a></li>
+                    <li><a class="dropdown-item" href="#">Most popular</a></li>
+                    <li><a class="dropdown-item" href="#">Recently added</a></li>
+                    <li><a class="dropdown-item" href="#">Lowest price</a></li>
+                    <li><a class="dropdown-item" href="#">Highest price</a></li>
+                    <li><a class="dropdown-item" href="#">Name: A-Z</a></li>
+                    <li><a class="dropdown-item" href="#">Name: Z-A</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="product-list-display">
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
@@ -206,15 +186,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
@@ -224,15 +204,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
@@ -242,15 +222,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
@@ -260,15 +240,15 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
@@ -278,15 +258,33 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="deal_box">
                         <img class="img-fluid" src="./assets/images/deal.png" alt="">
-                        <div class="hot_deal_details vendors_names">
-                            <div class="cart-relates-content">
-                                <p>Flower</p>
-                                <p>THC 13.8%</p>
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
                             </div>
-                            <h2>C. Extreme Cream 3.5g(Smalls) - BROTHERS</h2>
-                            <div class="hot_deal_price">
-                                <h3>$300 Each</h3>
-                                <div class="you_save_img2">
+                            <div class="you_save">
+                                <div class="you_save_img">
+                                    <img src="./assets/images/_basket.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="deal_box">
+                        <img class="img-fluid" src="./assets/images/deal.png" alt="">
+                        <div class="deal_box_detail">
+                            <h2>4 OZ for $500 SPECIAL! PUNCHCAKE, PINK SHERB</h2>
+                        </div>
+                        <div class="deal_box_price">
+                            <div>
+                                <h3>$ 300</h3>
+                            </div>
+                            <div class="you_save">
+                                <div class="you_save_img">
                                     <img src="./assets/images/_basket.png" alt="">
                                 </div>
                             </div>
