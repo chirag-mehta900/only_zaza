@@ -19,7 +19,7 @@
                 <div class="col-sm-6 col-lg-6 col-xl-6">
                     <div class="logo">
                         <a href="./index.html">
-                        <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
+                            <img src="assets/images/OnlyZaza Logo Group.png" alt="logo">
                         </a>
                         <div class="header_button">
                             <a href="./DealsPage.html">
@@ -340,13 +340,43 @@
         </div>
     </section>
     <section class="store-products container_re">
-        <div>
-            <h2>All Products</h2>
-        </div>
+            <div class="product-search-filter">
+                <div>
+                    <h2>All Products</h2>
+                </div>
+                <input type="text" placeholder="Search Products">
+                <div>
+                    <p>60 results found</p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Relevance
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="accountDropdown">
+                        <a class="dropdown-item" href="#">Relevance</a>
+                        <a class="dropdown-item" href="#">Most popular</a>
+                        <a class="dropdown-item" href="#">Recently added</a>
+                        <a class="dropdown-item" href="#">Lowest price</a>
+                        <a class="dropdown-item" href="#">Highest price</a>
+                        <a class="dropdown-item" href="#">Name: A-Z</a>
+                        <a class="dropdown-item" href="#">Name: Z-A</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-category">
+                <a href="#flowers">
+                <h2 style="color: #F89838;">Flower</h2>
+            </a>
+            <a href="#Concentrates">
+                <h2>Concentrates</h2>
+            </a>
+                <h2>Edibles</h2>
+            </div>
         <hr>
         <div class="row">
             <div class="col-md-2">
-                <div class="filter-product" style="display: block;">
+                <div class="filter-product">
                     <div>
                         <h2>Price range</h2>
                         <div>
@@ -371,172 +401,303 @@
                             <label for="each">Each</label>
                         </div>
                     </div>
+                    <div>
+                        <h2>Categories</h2>
+                        <div>
+                            <input type="radio" id="any3" name="any3" value="any3">
+                            <label for="any3">Any</label><br>
+
+                            <input type="radio" id="Exotics" value="Exotics">
+                            <label for="Exotics">Exotics</label> <br>
+
+                            <input type="radio" id="TopShelf" value="TopShelf">
+                            <label for="TopShelf">Top Shelf</label> <br>
+
+                            <input type="radio" id="Sativa" value="Sativa">
+                            <label for="Sativa">Sativa</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-9">
                 <div>
-                    <div class="product-search-filter">
-                        <input type="text" placeholder="Search Products">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Relevance
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="accountDropdown">
-                                <a class="dropdown-item" href="#">Relevance</a>
-                                <a class="dropdown-item" href="#">Most popular</a>
-                                <a class="dropdown-item" href="#">Recently added</a>
-                                <a class="dropdown-item" href="#">Lowest price</a>
-                                <a class="dropdown-item" href="#">Highest price</a>
-                                <a class="dropdown-item" href="#">Name: A-Z</a>
-                                <a class="dropdown-item" href="#">Name: Z-A</a>
+                    <div class="shop-product-list">
+                        <div class="headind-top" id="flowers">
+                            <h2>Flowers</h2>
+                        </div>
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
+                                </div>
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                </div>
                             </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
+                        </div>
+
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
+                                </div>
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
+                        </div>
+
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
+                                </div>
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
                         </div>
                     </div>
+
                     <div class="shop-product-list">
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
+                        <div class="headind-top" id="Concentrates">
+                            <h2>Concentrates</h2>
+                        </div>
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
+                                </div>
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
-                                </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <a href="./Cart.html">
-                                        <img src="./assets/images/_basket.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
                         </div>
 
-
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
+                                </div>
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
-                                </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <img src="./assets/images/_basket.png" alt="">
-                                </div>
-                            </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
                         </div>
 
-
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
-                            </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
+                        <div id="some-div">
+                            <div class="product-boxs">
+                                <div class="boxs-img-detail">
+                                    <div class="boxs-img">
+                                        <img src="./assets/images/productimg.png" alt="">
+                                    </div>
+                                    <div class="boxs-detail">
+                                        <div class="boxs-type">
+                                            <p>TOP SHELF</p>
+                                            <p>THC 13.8%</p>
+                                        </div>
+                                        <h2>C. Extreme Cream 3.5g(Smalls)
+                                            - Brothers</h2>
+                                    </div>
                                 </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <img src="./assets/images/_basket.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
-                            </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
-                                </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <img src="./assets/images/_basket.png" alt="">
+                                <div class="boxs-price">
+                                    <div class="boxs-price-by">
+                                        <h3>50</h3>
+                                        <p>1/8</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>100</h3>
+                                        <p>1/4</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>180</h3>
+                                        <p>1/2</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
+                                    <div class="boxs-price-by">
+                                        <h3>320</h3>
+                                        <p>OZ</p>
+                                        <button><img src="./assets/images/icone/_basket.png" alt=""></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
-                            </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
-                                </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <img src="./assets/images/_basket.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="store-list-box">
-                            <div class="store-img">
-                                <img src="./assets/images/Maskqq.png" alt="">
-                            </div>
-                            <div class="store-detail">
-                                <div class="category">
-                                    <p>Hybrid | Flower | Extreme Cream</p>
-                                    <p>THC 13.8%</p>
-                                </div>
-                                <div class="product-name">
-                                    <h2>C. Extreme Cream 3.5g(Smalls) - Brothers</h2>
-                                </div>
-                            </div>
-                            <div class="shop-price">
-                                <div>
-                                    <h2>$ 60 Each</h2>
-                                </div>
-                                <div class="shoping_basket">
-                                    <img src="./assets/images/_basket.png" alt="">
-                                </div>
-                            </div>
+                            <span id="some-element">
+                                <p>Bred by Cannarado and sent out to the Jungle Boyz, Sundae Driver is a smooth and
+                                    creamy cross of FPOG and Grape Pie. profile. Buds are light green in color with
+                                    purple accents and come drenched in trichomes.</p>
+                            </span>
                         </div>
                     </div>
                 </div>

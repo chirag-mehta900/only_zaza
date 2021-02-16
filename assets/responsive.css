@@ -182,10 +182,19 @@
     .store-list-box {
         margin: 15px;
     }
-
-    .product-search-filter {
+    .product-category{
         margin-right: 20px;
         margin-left: 20px;
+        display: block;
+    }
+    .product-search-filter {
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .product-search-filter input{
+        width: 90%;
+        margin-bottom: 1rem;
     }
 
     .product_det {
@@ -362,6 +371,9 @@
 
     .boxs-type p {
         margin-bottom: 0px;
+    }
+    .connect-to-bus{
+        display: block;
     }
 }
 
