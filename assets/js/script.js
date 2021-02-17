@@ -32,3 +32,10 @@ ratings.forEach((rating) => {
     ratingContent.indexOf("%") >= 0 ? "<small>%</small>" : ""
   }</span>`;
 });
+
+
+$ (window).ready (function () {
+	setTimeout (function () {
+		$ ('#modal-subscribe').modal ("show")
+	}, 2000)
+})

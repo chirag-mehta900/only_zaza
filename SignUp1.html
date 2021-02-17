@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="">
         <section class="header_start container_re">
@@ -23,7 +25,7 @@
                             <a href="./DealsPage.html">
                                 <button>Deals</button>
                             </a>
-                            <a href="./VendorPage.html">
+                            <a href="./Search.html">
                                 <button>Vendors</button>
                             </a>
                             <a href="./BusinessCorner.html">
@@ -36,9 +38,10 @@
                     <div class="accountdetail">
                         <div class="cart">
                             <div class="carttDropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                                <button class="btn dropdown-toggle" type="button" id="accountDropdown"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Cart <img src="./assets/images/_basket.png" alt="">
+                                    <h2>1</h2> <img src="./assets/images/_basket.png" alt="">
+                                    <p>Cart</p>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="accountDropdown">
                                     <a class="dropdown-item" href="#">
@@ -66,23 +69,27 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="displaynone" href="#">
                                         <div class="cart_btns">
-                                            <button class="cart_button">Cart</button>
-                                            <button class="check_out">Check out</button>
+                                            <a href="./Cart.html">
+                                                <button class="cart_button">Cart</button>
+                                            </a>
+                                            <a href="./Cart.html">
+                                                <button class="check_out">Check out</button>
+                                            </a>
                                         </div>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="accountDropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="accountDropdown"
+                            <button class="btn dropdown-toggle" type="button" id="accountDropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 My Account
                             </button>
                             <div class="dropdown-menu" aria-labelledby="accountDropdown">
                                 <a class="dropdown-item" href="#">User Name</a>
-                                <a class="dropdown-item" href="#">Your Wish List</a>
+                                <a class="dropdown-item" href="./WishList.html">Your Wish List</a>
                                 <a class="dropdown-item" href="#">Sign Out</a>
                             </div>
                         </div>
@@ -99,7 +106,7 @@
             <div class="col-md-6 container_re">
                 <div class="sign-up-v">
                     <div class="sign-up-v-qu">
-                        <p>Start Your Journey with 
+                        <p>Start Your Journey with
                             ONLYZAZA as a Vendor
                         </p>
                     </div>
@@ -112,8 +119,12 @@
                         <input type="number" name="phoneno" id="phoneno" placeholder="Phone No.">
                     </div>
                     <div class="sign-up-v-btn">
-                        <button class="signup-back">Back</button>
-                        <button class="signup-next">Next</button>
+                        <a href="./BusinessCorner.html">
+                            <button class="signup-back">Back</button>
+                        </a>
+                        <a href="./SignUp2.html">
+                            <button class="signup-next">Next</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -155,4 +166,5 @@
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/carousel.js"></script>
 </body>
+
 </html>
