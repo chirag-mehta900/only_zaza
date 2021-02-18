@@ -264,6 +264,7 @@ select.search_vender_drop {
     background-position: calc(100% - 2px) calc(1em + -5px), calc(100% - 17px) calc(1em + 2px), calc(100% - 0.5em) 0.5em;
     background-size: 25px 25px, 25px 25px, 0.5em 1.5em;
     background-repeat: no-repeat;
+    background-color: #ffffff;
 }
 
 .near-v {
@@ -1917,6 +1918,15 @@ input#promo_code {
 .banner-o {
     margin-top: 20px !important;
     margin-bottom: 60px !important;
+}
+
+.signup-vendor img {
+    height: 100%;
+    width: 100%;
+}
+
+.sign-up-v {
+    margin-left: 70px;
 }
 
 .sign-up-v-qu p {
