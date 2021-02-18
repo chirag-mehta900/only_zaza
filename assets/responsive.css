@@ -499,4 +499,8 @@
     .filter-product {
         margin-left: 20px;
     }
+    .fil-prod{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
