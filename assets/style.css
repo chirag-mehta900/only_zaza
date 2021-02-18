@@ -1,6 +1,6 @@
 body {
     display: block;
-    margin: 0px;
+    margin: 0;
 }
 
 a {
@@ -9,7 +9,6 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-
 a:hover {
     color: #0056b3;
     text-decoration: none !important;
@@ -89,7 +88,7 @@ header {
 }
 
 .carttDropdown button p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-right: 5px;
 }
 
@@ -102,7 +101,7 @@ header {
 .product_in_cart .cart_box {
     display: flex;
     background-color: #ffffff;
-    box-shadow: 0px 0px 11px #E9E9E9;
+    box-shadow: 0 0 11px #E9E9E9;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -239,7 +238,7 @@ header {
     position: absolute;
     font-weight: 700;
     font-size: 16px !important;
-    margin: 0px;
+    margin: 0;
     color: #2F2D2D;
     padding-top: 8px;
     padding-left: 5px;
@@ -275,7 +274,7 @@ select.search_vender_drop {
     position: absolute;
     font-weight: 700;
     font-size: 16px !important;
-    margin: 0px;
+    margin: 0;
     color: #2F2D2D;
     padding-top: 8px;
     padding-left: 5px;
@@ -348,13 +347,12 @@ select.search_vender_drop {
 .search_bar_vender h2 {
     font-size: 20px;
     color: #000000;
-    margin-right: 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 .search_bar_vender p {
     font-size: 20px;
-    margin: 0px;
+    margin: 0;
     color: #2F2D2D;
 }
 
@@ -412,7 +410,7 @@ select.search_vender_drop {
 }
 
 .you_save1 h3 {
-    margin: 0px;
+    margin: 0;
     color: #ffffff;
     font-size: 25px;
     background-color: #FF9933;
@@ -437,7 +435,7 @@ select.search_vender_drop {
 .deal_box {
     background-color: #ffffff;
     padding: 5px;
-    box-shadow: 0px 0px 11px #E9E9E9;
+    box-shadow: 0 0 11px #E9E9E9;
     border-radius: 5px;
     margin-right: 20px;
     margin-left: 20px;
@@ -465,7 +463,7 @@ select.search_vender_drop {
     color: #ffffff;
     font-size: 10px !important;
     padding-right: 25px;
-    margin: 0px;
+    margin: 0;
 }
 
 .you_save_img {
@@ -480,7 +478,7 @@ select.search_vender_drop {
 
 .you_save_img img {
     padding-top: 11px;
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 .you_save {
@@ -501,7 +499,7 @@ select.search_vender_drop {
     color: #ffffff !important;
     font-size: 10px !important;
     padding-right: 25px;
-    margin: 0px;
+    margin: 0;
 }
 
 .deal_box_detail {
@@ -556,7 +554,7 @@ select.search_vender_drop {
 }
 
 .vendors_names h3 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: -30px;
     font-size: 20px;
     color: #2E3A59;
@@ -567,14 +565,11 @@ select.search_vender_drop {
 }
 
 .vendors_names {
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    padding: 10px 25px;
 }
 
 .vendors_names p {
-    margin: 0px;
+    margin: 0;
     color: #64BC26;
 }
 
@@ -606,7 +601,7 @@ select.search_vender_drop {
     font-size: 20px;
     color: #ffffff;
     text-align: left;
-    margin: 0px;
+    margin: 0;
     padding-left: 20px;
 }
 
@@ -629,7 +624,7 @@ select.search_vender_drop {
     background-color: #ffffff;
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 11px #E9E9E9;
+    box-shadow: 0 0 11px #E9E9E9;
 }
 
 .hot_deal_price {
@@ -664,7 +659,7 @@ select.search_vender_drop {
     padding-top: 10px;
     width: 16px !important;
     height: 23px;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 img.right-arrow-vend {
@@ -721,9 +716,8 @@ footer {
     max-width: 470px;
     width: 100%;
     margin: 0 auto;
-    box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);
+    box-shadow: 0 2px 5px 0 rgba(10, 6, 20, 0.24);
 }
-
 .subscribe_form:focus {
     outline: none;
 }
@@ -731,7 +725,6 @@ footer {
 .subscribe_form .form-control {
     border: none;
 }
-
 .subscribe_form .form-control:focus {
     box-shadow: none;
 }
@@ -758,10 +751,9 @@ footer {
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
 }
-
-.subscribe_form button:hover,
-.subscribe_form button:focus,
 .subscribe_form button:active,
+.subscribe_form button:focus,
+.subscribe_form button:hover,
 .subscribe_form button:visited {
     color: #fff;
     background-color: #FF9933;
@@ -772,8 +764,6 @@ footer {
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
 }
-
-
 .subscribe_form button:before {
     content: "";
     position: absolute;
@@ -788,11 +778,10 @@ footer {
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
 }
-
-.subscribe_form .input-group-btn:last-child>.btn,
-.subscribe_form .input-group-btn:last-child>.btn-group {
+.subscribe_form .input-group-btn:last-child > .btn,
+.subscribe_form .input-group-btn:last-child > .btn-group {
     z-index: 2;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .social_media {
@@ -814,11 +803,11 @@ footer {
 }
 
 .hilight_line p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .hilight_line h2 {
-    margin: 0px;
+    margin: 0;
 }
 
 .store-list-box {
@@ -826,9 +815,8 @@ footer {
     justify-content: space-between;
     width: inherit;
     background-color: #ffffff;
-    margin: 5px;
-    margin-bottom: 30px;
-    box-shadow: 0px 0px 11px #e9e9e9;
+    margin: 5px 5px 30px;
+    box-shadow: 0 0 11px #e9e9e9;
     border-radius: 10px;
 }
 
@@ -850,8 +838,7 @@ footer {
 
 .store-detail {
     margin-left: -240px;
-    padding: 15px;
-    padding-right: 20px;
+    padding: 15px 20px 15px 15px;
 }
 
 .category {
@@ -952,7 +939,7 @@ footer {
 
 .shop-summ-name h2 {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-left: 15px;
 }
 
@@ -976,8 +963,7 @@ footer {
 
 .shop-search {
     background-color: #FF9933;
-    padding: 20px;
-    padding-left: 50px;
+    padding: 20px 20px 20px 50px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     margin-top: 20px;
@@ -985,7 +971,7 @@ footer {
 }
 
 .shop-search input {
-    margin-top: 10px;
+    margin-top: 10px !important;
     margin-bottom: 20px !important;
     border-radius: 9px;
     padding-left: 10px;
@@ -1288,17 +1274,16 @@ footer {
 .col-xl-7,
 .col-xl-8,
 .col-xl-9 {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 .row {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 /* Variables */
-
 :root {
     --rating-size: 10rem;
     --bar-size: 1rem;
@@ -1400,7 +1385,6 @@ footer {
     border-radius: 10px;
     animation: progress 0.8s cubic-bezier(0, 0, 0.3, 1);
 }
-
 @keyframes progress {
     from {
         width: 0;
@@ -1426,14 +1410,12 @@ footer {
 
 .review-block {
     max-width: 1200px;
-    margin-top: 50px !important;
-    margin-bottom: 40px !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
     padding: 15px;
-    box-shadow: 0px 0px 11px #e9e9e9;
+    box-shadow: 0 0 11px #e9e9e9;
     border-radius: 10px;
 }
 
@@ -1650,16 +1632,16 @@ input#promo_code {
     border: 2px solid #B3B3B3;
     border-radius: 10px;
     margin-bottom: 20px;
-    padding: 10px;
-    padding-left: 30px;
+    padding: 10px 10px 10px 30px;
+    width: 350px;
 }
 
 .address-box input {
     border: 2px solid #B3B3B3;
     border-radius: 10px;
     margin-bottom: 20px;
-    padding: 10px;
-    padding-left: 30px;
+    padding: 10px 10px 10px 30px;
+    width: 150px;
 }
 
 .cart-address {
@@ -1686,10 +1668,9 @@ input#promo_code {
     font-size: 15px;
     color: #6E798C;
 }
-
-.filter-product .menu-tial-ser .filter-sh-pro .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
-.show>.btn-secondary.dropdown-toggle {
+.filter-product .menu-tial-ser .filter-sh-pro .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
     color: #2E3A59 !important;
 }
 
@@ -1710,7 +1691,7 @@ input#promo_code {
     justify-content: space-between;
     background: #ffffff;
     border-radius: 15px;
-    box-shadow: 0px 0px 11px #e9e9e9;
+    box-shadow: 0 0 11px #e9e9e9;
 }
 
 .boxs-img-detail {
@@ -1750,7 +1731,7 @@ input#promo_code {
 .boxs-price-by h3 {
     font-size: 30px;
     color: #F89938;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .boxs-price button {
@@ -1761,7 +1742,7 @@ input#promo_code {
 
 .boxs-price-by p {
     font-size: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .boxs-price {
@@ -1772,7 +1753,7 @@ input#promo_code {
 }
 
 #some-element {
-    box-shadow: 0px 0px 11px #e9e9e9;
+    box-shadow: 0 0 11px #e9e9e9;
     background-color: #ffffff;
     display: none;
     font-size: 10px;
@@ -1786,9 +1767,8 @@ input#promo_code {
 
 #some-element p {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-
 #some-div:hover #some-element {
     display: block;
 }
@@ -2166,4 +2146,28 @@ input#promo_code {
 .wishlist {
     margin-top: 50px !important;
     margin-bottom: 50px !important;
+}
+.cart_weight{
+    margin-right: 10px;
+}
+.cart_weight input[type=checkbox].css-checkbox{ display: none; }
+
+.css-label{
+    padding-left: 5px;
+    display: flex;
+    width: 40px;
+    border-radius: 5px;
+    height: 30px;
+    border: 3px solid #F89938;
+    color: #000000;
+}
+
+.cart_weight input[type=checkbox].css-checkbox:checked + label.css-label {
+ background-position: 0 0;
+ background-color: #F89938;
+ color: #ffffff;
+}
+.cart_weight-flex{
+    display: flex;
+    justify-content: space-between;
 }

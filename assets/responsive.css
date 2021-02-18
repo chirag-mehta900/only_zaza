@@ -257,6 +257,18 @@
         font-size: 15px;
     }
 
+    .product-d .ponits {
+        margin-top: 38px;
+    }
+
+    .product-d .price-point {
+        margin-top: 35px;
+    }
+
+    .checkout-comp button {
+        width: 100px;
+    }
+
     .product-name-p h2 {
         font-size: 20px;
     }
@@ -499,7 +511,8 @@
     .filter-product {
         margin-left: 20px;
     }
-    .fil-prod{
+
+    .fil-prod {
         margin-left: 20px;
         margin-right: 20px;
     }
