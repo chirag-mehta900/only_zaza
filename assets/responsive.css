@@ -91,7 +91,11 @@
 @media only screen and (max-width: 574px) {
     .accountdetail {
         justify-content: space-evenly;
-        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .active-header {
+        height: 55px;
     }
 
     .logo {
@@ -103,7 +107,7 @@
     }
 
     .header_button {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .header_button button {
@@ -182,17 +186,20 @@
     .store-list-box {
         margin: 15px;
     }
-    .product-category{
+
+    .product-category {
         margin-right: 20px;
         margin-left: 20px;
         display: block;
     }
+
     .product-search-filter {
         display: block;
         margin-right: 20px;
         margin-left: 20px;
     }
-    .product-search-filter input{
+
+    .product-search-filter input {
         width: 90%;
         margin-bottom: 1rem;
     }
@@ -372,8 +379,59 @@
     .boxs-type p {
         margin-bottom: 0px;
     }
-    .connect-to-bus{
+
+    .connect-to-bus {
         display: block;
+    }
+
+    .order-page {
+        display: block;
+    }
+
+    .order-page .shop_img {
+        width: 100%;
+    }
+
+    .order-page .shop_detail {
+        width: 100%;
+        text-align: center;
+    }
+
+    .order-page .shop-name {
+        justify-content: center;
+    }
+
+    .order-page .shop-name h2 {
+        font-size: 20px;
+    }
+
+    .order-page .shop-rating {
+        display: block;
+        width: 100%;
+    }
+
+    .order-page .shop_detail_btn {
+        width: 100%;
+    }
+
+    .placed-order {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .placed-order p {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .placed-order tr {
+        display: grid;
+        text-align: inherit;
+    }
+
+    .placed-order-name p {
+        font-size: 20px;
+        margin-top: 10px;
     }
 }
 

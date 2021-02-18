@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-6 col-xl-6">
                     <div class="accountdetail">
-                        <div class="cart">
+                        <div class="cart active-header">
                             <div class="carttDropdown">
                                 <button class="btn dropdown-toggle" type="button" id="accountDropdown"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -167,7 +167,8 @@
             <div class="order-address">
                 <div class="address-box">
                     <div class="cart-address">
-                        <textarea name="message" id="message" cols="45" rows="3" placeholder="Your Text" value=""></textarea>
+                        <textarea name="message" id="message" cols="45" rows="3" placeholder="Your Text"
+                            value=""></textarea>
                         <img src="./assets/images/icone/cartaddress.svg" alt="">
                     </div>
                     <input type="number" name="zip-code" id="zip-code" placeholder="Zip Code">
@@ -181,8 +182,12 @@
                 </div>
             </div>
             <div class="checkout-comp">
-                <button>Continue Shopping</button>
-                <button>Proceed to Checkout</button>
+                <a href="./index.html">
+                    <button>Continue Shopping</button>
+                </a>
+                <a href="./OrderConfirm.html">
+                    <button>Proceed to Checkout</button>
+                </a>
             </div>
         </div>
     </section>

@@ -28,6 +28,11 @@ header {
     background-color: #000000;
 }
 
+.active-header {
+    background-color: #F89938 !important;
+    height: 80px !important;
+}
+
 /* .header_start {
     display: flex;
     justify-content: space-between;
@@ -60,9 +65,9 @@ header {
 
 .accountdetail {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: flex-end;
-    margin-top: 20px;
+    height: 80px;
 }
 
 .accountDropdown button {
@@ -658,6 +663,7 @@ select.search_vender_drop {
     padding-top: 10px;
     width: 16px !important;
     height: 23px;
+    border-radius: 0px;
 }
 
 img.right-arrow-vend {
@@ -2065,12 +2071,61 @@ input#promo_code {
 .order-page-address img {
     margin-right: 10px;
 }
-.confirm-message{
+
+.confirm-message {
     text-align: center;
     padding: 20px;
     background-color: #B1DD93;
 }
-.confirm-message p{
+
+.confirm-message p {
     font-size: 25px;
     color: #08162D;
+}
+
+.placed-orde {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.placed-order table {
+    width: 100%;
+}
+
+.placed-order-img img {
+    height: 150px;
+    width: auto;
+    border-radius: 15px;
+}
+
+.placed-order-name p {
+    font-size: 35px;
+    color: #2E3A59;
+}
+
+.placed-order-weight p {
+    font-size: 20px;
+    color: #48516B;
+}
+
+.placed-order-quan p {
+    font-size: 20px;
+    color: #48516B;
+}
+
+.placed-order-price p {
+    font-size: 20px;
+    color: #48516B;
+}
+
+.placed-order-remove button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.line-down {
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 1px;
 }
