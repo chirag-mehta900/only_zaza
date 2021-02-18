@@ -188,8 +188,6 @@
     }
 
     .product-category {
-        margin-right: 20px;
-        margin-left: 20px;
         display: block;
     }
 
@@ -323,7 +321,8 @@
         margin-right: 20px;
         margin-left: 20px;
     }
-    .address-box{
+
+    .address-box {
         width: 100%;
     }
 
@@ -470,6 +469,34 @@
 
     .shop_detail {
         margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .headline_promo {
+        justify-content: space-around;
+    }
+
+    .cart-page {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .product-search-filter {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .headind-top {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .product-category {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .filter-product {
         margin-left: 20px;
     }
 }
